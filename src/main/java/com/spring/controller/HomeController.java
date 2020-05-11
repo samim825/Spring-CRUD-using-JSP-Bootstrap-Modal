@@ -2,6 +2,7 @@ package com.spring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Created by User on 5/12/2020.
@@ -11,6 +12,7 @@ public class HomeController {
 
     @GetMapping({"/","/index"})
     public String goIndex(){
-        return "index";
+        System.out.println("goIndex method visited");
+        return "home";
     }
 }
